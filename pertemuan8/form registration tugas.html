@@ -1,76 +1,98 @@
 <!DOCTYPE html>
-<html>
-    <head><title>Belajar HTML - Membuat Form</title></head>
-<body> 
+<html lang="en">
 
-<form action="prosessForm.php" method="GET">
-<!-- letakkan field di sini -->
-<fieldset>
-<legend><h1>Free Registration </h1></legend>
-<table>
-    <tr>
-        <td>Nama </td>
-        <td>:</td>
-        <td><input type="name" name="nama"  required/><br /></td>
-    </tr>       
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
 
-    <tr>
-        <td>Tempat/Tanggal Lahir</td>
-        <td>:</td>
-        <td><input type="name" name="tempatLahir"/> <input type="date" name="tanggal" /></td>
-    </tr>
+    <style>
+        h1 {
+            margin-left: 15%;
+            color: rgb(8, 96, 122);
+        }
 
-    <tr>
-        <td>Alamat</td>
-        <td>:</td>
-        <td><textarea name="komentar" rows="4" cols="50" ></textarea> </td>
-    </tr>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 30vh;
+        }
 
-    <tr>
-        <td>Kota </td>
-        <td>:</td>
-        <td><input type="number" name="number" /></td>
-    </tr>
+        form {
+            margin-right: 850px;
+        }
+    </style>
 
-    <tr>
-        <td>Pekerjaan </td>
-        <td>:</td>
-        <td><input type="name" name="Pekerjaan"  required/><br /></td>
-    </tr>
+</head>
 
-    <tr>
-        <td>Jenis Kelamin</td>
-        <td>:</td>
-        <td><input type="radio" name="jenisKelamin" /> Pria
-            <input type="radio" name="jenisKelamin" /> Wanita</td>
-    </tr>
+<body>
+    <h1>Free Registration</h1>
+    <div class="container">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Nama : </td>
+                    <td><input type="text"></td>
+                </tr>
 
-    <tr>
-        <td>Hobi</td>
-        <td>:</td>
-        <td><input type="checkbox" name="hobi" /> Reading </input>
-            <input type="checkbox" name="hobi" /> Sport </input>
-            <input type="checkbox" name="hobi" /> Singing </input>
-            <input type="checkbox" name="hobi" /> Traveling </input></td>
-    </tr>
+                <tr>
+                    <td>Tgl Lahir : </td>
+                    <td><input type="date" name="tanggal" /></td>
+                </tr>
+
+                <tr>
+                    <td>Alamat : </td>
+                    <td><textarea name="biografi"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Kota : </td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Pekerjaan : </td>
+                    <td><select>
+                            <option>Tani</option>
+                            <option>Guru</option>
+                            <option>PNS</option>
+                            <option>Karyawan</option>
+                        </select>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin : </td>
+                    <td>
+                        <input type="radio" name="jk"> Laki-laki
+                        <input type="radio" name="jk"> Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Hobby : <br>
+                        &nbsp;<br>
+                        &nbsp;<br>
+                        &nbsp;
+                    </td>
+                    <td><input type="checkbox"> Reading <br>
+                        <input type="checkbox"> Sport <br>
+                        <input type="checkbox"> Singing <br>
+                        <input type="checkbox"> Traveling
+                    </td>
+                </tr>
+
+                    <td>
+                        <input type="submit" value="Kirim">
+                        <input type="button" value="Cancle">
+                    </td>
+                </tr>
 
 
-    <tr>
-        <td><input type="submit" name="submit" value="SUBMIT"/></td>
-        <td></td>
-        <td></td>
-    </tr>
-
-    <tr>
-        <td><input type="submit" name="cancel" value="CANCEL"/></td>
-        <td></td>
-        <td></td>
-    </tr>
-
-</table>
-</fieldset>
-
-</form>
-
+            </table>
+        </form>
+    </div>
 </body>
+
 </html>
