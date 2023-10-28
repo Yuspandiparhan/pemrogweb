@@ -1,21 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pribadi Parhan Yuspandi</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul >
-        <li><b>Nama    : </b> Parhan Yuspandi</li>
-        <li><b>NIM     :</b> 211011401478</li>
-        <li><b>Kelas   :</b> 05 TPLE 009</li>
-      </Ul>
-    <ol>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ol>
-    
+
+  <header>
+    <h1>Parhan Yuspandi</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="profil.html">Profil</a>
+      <a href="about.html">About</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Selamat datang di website pribadi Parhan Yuspandi</h2>
+    <p>
+      Saya adalah seorang web developer yang berpengalaman dalam pengembangan web statis dan dinamis. Saya juga memiliki minat dalam bidang desain grafis dan videografi.
+    </p>
+    <a href="profil.html">Selengkapnya</a>
+  </section>
+
+  <section id="profil">
+    <h2>Profil</h2>
+    <img src="img/parhan.jpg" alt="Foto Parhan Yuspandi">
+    <p>
+      Nama saya Parhan Yuspandi, saya lahir di Bandung, Jawa Barat pada tanggal 10 Desember 1999. Saya saat ini tinggal di Tangerang, Banten.
+    </p>
+    <p>
+      Saya lulusan S1 Teknik Informatika dari Universitas Indonesia. Saya memiliki minat dalam bidang web development, desain grafis, dan videografi.
+    </p>
+    <p>
+      Saya memiliki pengalaman kerja sebagai web developer di sebuah perusahaan IT selama 2 tahun. Saya juga aktif dalam kegiatan pengembangan web open source.
+    </p>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      Website ini dibuat untuk mempromosikan diri saya sebagai web developer dan desainer grafis. Saya berharap website ini dapat membantu saya untuk menemukan peluang kerja dan mengembangkan karier saya.
+    </p>
+    <p>
+      Jika Anda memiliki pertanyaan atau ingin bekerja sama dengan saya, Anda dapat menghubungi saya melalui email atau media sosial saya.
+    </p>
+    <ul>
+      <li>Email: parhan.yuspandi@gmail.com</li>
+      <li>LinkedIn: linkedin.com/in/parhan-yuspandi</li>
+      <li>Github: github.com/parhanyuspandi</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="img/1.jpg" alt="Gambar 1">
+      <img src="img/2.jpg" alt="Gambar 2">
+      <img src="img/3.jpg" alt="Gambar 3">
+      <img src="img/4.jpg" alt="Gambar 4">
+    </div>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <form action="kontak.php" method="post">
+      <input type="text" name="nama" placeholder="Nama">
+      <input type="email" name="email" placeholder="Email">
+      <input type="text" name="pesan" placeholder="Pesan">
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2023 Parhan Yuspandi
+  </footer>
+
 </body>
 </html>
