@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dialog Box</title>
+</head>
+<body>
+  <button onclick="showDialog()">Tampilkan Dialog Box</button>
+
+  <script>
+    function showDialog() {
+      var dialog = document.createElement("dialog");
+      dialog.setAttribute("open", true);
+      dialog.setAttribute("modal", true);
+      dialog.setAttribute("title", "Nama Saya");
+
+      var p = document.createElement("p");
+      p.innerHTML = "Nama saya adalah Parhan Yuspandi";
+
+      dialog.appendChild(p);
+
+      document.body.appendChild(dialog);
+    }
+  </script>
+</body>
+</html>

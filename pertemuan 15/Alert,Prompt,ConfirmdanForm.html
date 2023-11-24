@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Program JavaScript Alert, Prompt, Confirm dan Form</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+
+    function alertMessage() {
+      alert("Selamat datang di program JavaScript Alert, Prompt, Confirm dan Form!");
+    }
+
+    function promptMessage() {
+      var nama = prompt("Masukkan nama Anda:");
+      alert("Nama Anda adalah " + nama);
+    }
+
+    function confirmMessage() {
+      var jawaban = confirm("Apakah Anda yakin ingin melanjutkan?");
+      if (jawaban) {
+        alert("Anda telah melanjutkan.");
+      } else {
+        alert("Anda telah membatalkan.");
+      }
+    }
+
+    function formSubmit() {
+      var nama = document.getElementById("nama").value;
+      var email = document.getElementById("email").value;
+      var pesan = document.getElementById("pesan").value;
+
+      if (nama == "" || email == "" || pesan == "") {
+        alert("Harap isi semua kolom.");
+        return;
+      }
+
+      alert("Nama Anda adalah " + nama + ", email Anda adalah " + email + ", dan pesan Anda adalah " + pesan);
+    }
+
+  </script>
+
+  <h1>Program JavaScript Alert, Prompt, Confirm dan Form</h1>
+
+  <button onclick="alertMessage()">Tampilkan Alert</button>
+  <button onclick="promptMessage()">Tampilkan Prompt</button>
+  <button onclick="confirmMessage()">Tampilkan Confirm</button>
+
+  <form onsubmit="formSubmit()">
+    <input type="text" name="nama" id="nama" placeholder="Nama">
+    <input type="email" name="email" id="email" placeholder="Email">
+    <input type="text" name="pesan" id="pesan" placeholder="Pesan">
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>

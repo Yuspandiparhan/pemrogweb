@@ -1,0 +1,25 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+form {
+  margin-top: 20px;
+}
+
+input {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.hasil {
+  margin-top: 20px;
+}
+
+#luas {
+  font-weight: bold;
+}
